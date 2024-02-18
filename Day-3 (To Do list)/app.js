@@ -10,9 +10,6 @@ function render(){
     inputEle.type='text'
     inputEle.placeholder='Enter your task'
 
-
-
-
     let submit = document.createElement("button")
     submit.className="btn"
     submit.textContent= "SUBMIT"
@@ -22,12 +19,15 @@ function render(){
     })
 
     let table = document.createElement("div")
+    table.className="table"
 
     for(let i=0;i<data.length;i++){
         let row=document.createElement("div")
-        
+        row.style.display="flex"
+        row.style.gap="10px"
+
         let sr = document.createElement("div")
-        sr.textContent=i+1
+        sr.textContent=i+1 
         let task= document.createElement("div")
         task.textContent=data[i]
 
@@ -36,10 +36,14 @@ function render(){
         table.appendChild(row)
     }
 
-    root.appendChild(inputEle)
-    root.appendChild(submit)
+    let info =document.createElement("div")
+    info.className="info"
+
+    info.appendChild(inputEle)
+    info.appendChild(submit)
+
+    root.appendChild(info)
     root.appendChild(table)
-    // root.appendChild(table)
 }
 
 

@@ -6,34 +6,49 @@
 #root {
     height: 100vh;
     width: 100%;
-    display: flex;
+    text-align: center;
+    
 }
 
 .input {
     height: 50px;
-    width: 200px;
+    width: 300px;
     margin: 10px;
     border: 2px solid;
     border-color: black;
     border-radius: 0.2rem;
 }
 
-.inputTime {
-    height: 50px;
-    width: 100px;
-    margin: 10px;
-    border: 2px solid;
-    border-color: black;
-    border-radius: 0.2;
-}
 
 .btn {
     cursor: pointer;
     height: 50px;
     width: 100px;
-    margin: 10;
+    margin: 10px;
     border: 2px solid;
     border-color: black;
-    border-radius: 0.2;
+    border-radius: 10rem;
 }
+/* display = flex ------------flexibility
+align-item = center -----------vertically
+justify-content = center/space-between/space-around/space-evenly ----------horizontal
 
+for specifix elements (like button,div,input)
+
+1. border  (border-radius)
+2. margin
+3. padding
+
+color system 
+1. background-color
+2. color (inside)
+
+1. height
+2. width 
+
+sizing
+
+1. px  (independent of parent)
+2. %  (dependent of parent)
+3. vh (viewport height)
+4. vw (viewport width) */
