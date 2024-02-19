@@ -49,7 +49,7 @@ function render(){
 
 
 
-
+// Repesentation in table format
 
 // let table = document.createElement("table")
     // table.border = 1
